@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "no-undef": 2,
+    "arrow-parens": 0,
+    "consistent-this": 0,
+    "curly": 0,
+    "dot-notation": 0,
+    "func-style": 0,
+    "indent": ["error", 2],
+    "no-else-return": 0,
+    "no-trailing-spaces": 0,
+    "no-unused-vars": "error",
+    "one-var": 0,
+    "prefer-arrow-callback": 0,
+    "prefer-const": "warn",
+    "sort-vars": 0,
+    "space-before-function-paren": 0,
+    "import/no-extraneous-dependencies": "warn",
+    "eol-last": ["error", "never"],
+    "one-var-declaration-per-line": ["error", "initializations"],
+    "no-console": "error",
+    "require-jsdoc": "warn"
+  }
+}

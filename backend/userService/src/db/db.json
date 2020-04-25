@@ -1,0 +1,18 @@
+[
+  {
+    "id" : "a319c719-bd49-49a8-8ece-c9a5b047fa77",
+    "firstName" : "John",
+    "lastName" : "Doe",
+    "balance" : 1000,
+    "transactions" : [],
+    "accounts" : []
+  },
+  {
+    "id" : "c90aadc8-da3f-4a26-b6db-6ae2d4bfb937",
+    "firstName" : "Kate",
+    "lastName" : "Smith",
+    "balance" : 5000,
+    "transactions" : [],
+    "accounts" : []
+  }
+]
