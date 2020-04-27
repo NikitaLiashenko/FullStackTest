@@ -38,14 +38,16 @@ router.post('/:userId/account', async(req, res, next) => {
   const { initialCredit } = req.body;
 
   try {
-    const account = await db.createAccount(userId, initialCredit);
+    const credit = parseInt(initialCredit, 10);
 
-    if (initialCredit > 0) {
-      const transaction = await transactionService.doTransaction(userId, initialCredit);
+    const account = await db.createAccount(userId, credit);
+
+    if (credit > 0) {
+      const transaction = await transactionService.doTransaction(userId, credit);
 
       await db.addTransaction(userId, transaction);
 
-      await db.updateBalance(userId, account.id, initialCredit);
+      await db.updateBalance(userId, account.id, credit);
     }
 
     res.end();
